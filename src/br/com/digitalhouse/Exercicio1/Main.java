@@ -16,22 +16,22 @@ public class Main {
 
         //Aulas
         ArrayList<Aula> arrayAulas = new ArrayList<>();
-        Aula aula1 = new Aula(horaInicio, horaTermino);
-        Aula aula2 = new Aula(horaInicio, horaTermino);
-        Aula aula3 = new Aula(horaInicio, horaTermino);
+        Aula aula1 = new Aula("Orientação Objeto", horaInicio, horaTermino);
+        Aula aula2 = new Aula("Java", horaInicio, horaTermino);
+        Aula aula3 = new Aula("Java Avançado", horaInicio, horaTermino);
 
         arrayAulas.add(aula1);
         arrayAulas.add(aula2);
         arrayAulas.add(aula3);
 
         //Aluno
-        Aluno alunoAlexandre = new Aluno(horaInicio, horaTermino, 10001, "Alexandre", "Medeiros");
+        Aluno alunoAlexandre = new Aluno(10001, "Alexandre", "Medeiros");
 
         //Alunos
         ArrayList<Aluno> arrayAlunos = new ArrayList<>();
         arrayAlunos.add(alunoAlexandre);
 
-        Curso android = new Curso("Android", arrayAulas, arrayAlunos, professoraJessica, "Java");
+        Curso android = new Curso("Android", arrayAulas, arrayAlunos, professoraJessica);
 
         //Imprimir
         //Nome do Aluno

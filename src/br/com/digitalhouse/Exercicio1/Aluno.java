@@ -1,6 +1,6 @@
 package br.com.digitalhouse.Exercicio1;
 
-public class Aluno extends Aula{
+public class Aluno{
 
     //Atributos
     private int registroAcademico;
@@ -8,13 +8,7 @@ public class Aluno extends Aula{
     private String sobrenome;
 
     //Construtor
-    public Aluno() {
-
-    }
-
-    public Aluno(Hora horarioInicio, Hora horarioTermino, int registroAcademico, String nome, String sobrenome) {
-        super(horarioInicio, horarioTermino);
-
+    public Aluno(int registroAcademico, String nome, String sobrenome) {
         this.registroAcademico = registroAcademico;
         this.nome = nome;
         this.sobrenome = sobrenome;

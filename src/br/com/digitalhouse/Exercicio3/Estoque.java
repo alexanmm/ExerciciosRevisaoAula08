@@ -9,7 +9,7 @@ public class Estoque {
 //interfaces aprendidas em sala de aula para a resolução dos
 //exercícios.
 
-
+/*
     //Atributos
     private String nome;
     private int qtdAtual;
@@ -60,5 +60,6 @@ public class Estoque {
 
     }
 
+ */
 
 }
