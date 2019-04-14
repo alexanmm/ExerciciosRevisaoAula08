@@ -6,17 +6,15 @@ public class Curso {
 
     //Atributos
     private String nomeCurso;
+    private String turma;
     private ArrayList<Aula> arrayAulas = new ArrayList<>();
     private ArrayList<Aluno> arrayAlunos = new ArrayList<>();
     private Professor professor;
 
     //Construtor
-    public Curso() {
-
-    }
-
-    public Curso(String nome, ArrayList<Aula> arrayAulas, ArrayList<Aluno> arrayAlunos, Professor professor) {
+    public Curso(String nomeCurso, String turma, ArrayList<Aula> arrayAulas, ArrayList<Aluno> arrayAlunos, Professor professor) {
         this.nomeCurso = nomeCurso;
+        this.turma = turma;
         this.arrayAulas = arrayAulas;
         this.arrayAlunos = arrayAlunos;
         this.professor = professor;
@@ -53,6 +51,14 @@ public class Curso {
 
     public void setProfessor(Professor professor) {
         this.professor = professor;
+    }
+
+    public String getTurma() {
+        return turma;
+    }
+
+    public void setTurma(String turma) {
+        this.turma = turma;
     }
 
     //Metodos

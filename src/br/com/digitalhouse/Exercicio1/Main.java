@@ -31,7 +31,7 @@ public class Main {
         ArrayList<Aluno> arrayAlunos = new ArrayList<>();
         arrayAlunos.add(alunoAlexandre);
 
-        Curso android = new Curso("Android", arrayAulas, arrayAlunos, professoraJessica);
+        Curso android = new Curso("Android", "MOB01", arrayAulas, arrayAlunos, professoraJessica);
 
         //Imprimir
         //Nome do Aluno
