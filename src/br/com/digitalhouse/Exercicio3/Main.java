@@ -26,6 +26,36 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Estoque estoqueLampada = new Estoque("Lampada", 10, 1);
+
+        System.out.println("Dados iniciais do produto:");
+        System.out.println(estoqueLampada.mostra());
+
+        //Alterar o nome do produto
+        System.out.println("Alterar o nome do produto:");
+        estoqueLampada.mudarNome("Lampada de Led");
+        System.out.println(estoqueLampada.mostra());
+
+        //Alterar a quantidade mínima
+        System.out.println("Alterar a quantidade mínima:");
+        estoqueLampada.mudarQtdMinima(5);
+        System.out.println(estoqueLampada.mostra());
+
+        //Baixar estoque
+        System.out.println("Baixar estoque:");
+        estoqueLampada.darBaixa(30);
+        System.out.println(estoqueLampada.mostra());
+
+        //Verifica se precisa repor o estoque
+        if (estoqueLampada.precisaRepor()){
+
+            //Repor o estoque
+            System.out.println("Repor o estoque:");
+            estoqueLampada.repor(50);
+            System.out.println(estoqueLampada.mostra());
+        }
+
+
     }
 
 }

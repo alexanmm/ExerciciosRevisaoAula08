@@ -1,19 +1,6 @@
 package br.com.digitalhouse.Exercicio3;
 
-public class Estoque {
-
-//Os atributos qtdAtual e qtdMinima jamais poderão ser negativos.
-
-//Obs: Use os conceitos de construtores com e sem parâmetros, get e set, classe
-//abstrata,
-//interfaces aprendidas em sala de aula para a resolução dos
-//exercícios.
-
-/*
-    //Atributos
-    private String nome;
-    private int qtdAtual;
-    private int qtdMinima;
+public class Estoque extends Produto{
 
     //Construtor
     public Estoque() {
@@ -21,45 +8,41 @@ public class Estoque {
     }
 
     public Estoque(String nome, int qtdAtual, int qtdMinima) {
+        super(nome, qtdAtual, qtdMinima);
+    }
+
+    //Métodos
+    public void mudarNome(String nome){
         this.nome = nome;
-        this.qtdAtual = qtdAtual;
+    }
+
+    public void mudarQtdMinima(int qtdMinima){
         this.qtdMinima = qtdMinima;
     }
 
-
-    //Getter and Setter
-
-    //Metodos
-    public void mudarNome(String nome){
-
-    }
-
-    public void mudarQtdMinima(int qtdMinima) void repor(int qtd){
-
+    public void repor(int qtd){
+        qtdAtual = qtdAtual + qtd;
     }
 
     public void darBaixa(int qtd){
-
-//• O método darBaixa diminui qtdAtual de acordo com o parâmetro qtd;
-
+        qtdAtual = qtdAtual - qtd;
     }
 
     public String mostra(){
-//• O método mostra() retorna uma String contendo o nome do produto, sua
-//quantidade mínima, sua quantidade atual;
+
+        return "Nome: " + nome +
+                " Qtd. Minima: " + qtdMinima +
+                " Qtd. Atual: " + qtdAtual;
 
     }
-
 
     public boolean precisaRepor(){
-//• O método repor aumenta qtdAtual de acordo com o parâmetro qtd;
 
-        //• O método precisaRepor retorna true caso a quantidade atual esteja menor ou igual
-//à quantidade mínima e false, caso contrário.
-
-
+        if (qtdAtual <= qtdMinima) {
+            return true;
+        } else {
+            return false;
+        }
     }
-
- */
 
 }
