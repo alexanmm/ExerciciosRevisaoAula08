@@ -24,6 +24,21 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Fatura faturaAlexandre = new Fatura();
+        Item itemSapato = new Item(1, "Sapato", 1.0d, 120.00d);
+        Item itemRoupa = new Item(2, "Blusa", 2.0d, 30.0d);
+        Item itemCalca = new Item(3, "Calca Jeans", 3.0d, 60.0d);
+        Item itemPao = new Item(4, "Pao de Forma", 2.0d, 4.0d);
+
+        faturaAlexandre.adicionarItemFatura(itemSapato);
+        faturaAlexandre.adicionarItemFatura(itemRoupa);
+        faturaAlexandre.adicionarItemFatura(itemCalca);
+        faturaAlexandre.adicionarItemFatura(itemPao);
+
+        System.out.println("Total da fatura: " + faturaAlexandre.getTotalFatura());
+
+
+
     }
 
 }
